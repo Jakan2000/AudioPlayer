@@ -19,8 +19,8 @@ body {
   .playlist-btn {
     padding: 8px 12px;
     cursor: pointer;
-    background-color: #0011ff;
-    color: rgb(255, 255, 255);
+    background-color: #555555;
+    color: rgb(100, 200, 50);
     border: none;
     border-radius: 5px;
   }
@@ -46,42 +46,43 @@ body {
   }
   
   .speaker {
-    width: 30px;
+    width: 50px;
     height: 100px;
     background-color: rgb(85, 255, 0);
-    border-radius: 10px;
+    border-radius: 5px;
     transform: rotate(90deg);
   }
   
   .left-speaker {
-    margin-right: 50px;
+    margin-right: 70px;
   }
   
   .right-speaker {
-    margin-left: 50px;
+    margin-left: 70px;
   }
   
   .current-song {
-    color: rgb(200, 0, 255);
+    color: rgb(0, 255, 55);
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
   
   .controls {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
   }
   
   .control-btn {
     padding: 8px 12px;
     cursor: pointer;
-    background-color: #ffffff;
-    color: rgb(20, 20, 20);
-    border: none;
-    border-radius: 5px;
+    background-color: #252525;
+    color: rgb(55, 255, 0)
+    /* border: none; */
+    /* border-radius: 5px; */
   }
+
   #myAudio {
     width: 100%;
     margin-top: 20px;
