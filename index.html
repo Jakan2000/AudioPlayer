@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retro Radio Audio Player</title>
+  <link rel="stylesheet" href="audioPlayer.css">
+</head>
+<body>
+  <div class="playlists">
+    <button id="playlist1" class="playlist-btn">Muthu-Love Songs</button>
+    <button id="playlist2" class="playlist-btn">Muthu-Kuthu</button>
+    <button id="playlist3" class="playlist-btn">Muthu-Old Meloady</button>
+    <button id="playlist4" class="playlist-btn">Jakan-Play List</button>
+  </div>
+  <div class="retro-radio">
+    <div class="speakers">
+      <div class="speaker left-speaker"></div>
+      <div id="currentSong" class="current-song">No song selected</div>
+      <div class="speaker right-speaker"></div>
+    </div>
+    <div class="controls">
+      <button id="prevBtn" class="control-btn">Previous</button>
+      <button id="playBtn" class="control-btn">Play</button>
+      <button id="pauseBtn" class="control-btn">Pause</button>
+      <button id="stopBtn" class="control-btn">Stop</button>
+      <button id="nextBtn" class="control-btn">Next</button>
+    </div>
+    <audio id="myAudio" controls>
+      <source src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script src="audioPlayer.js"></script>
+</body>
+</html>
