@@ -431,28 +431,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById('playlist1').addEventListener('click', function() {
     currentPlaylist = playlists.playlist1;
-    currentPlaylistName = 'playlist1';
+    currentPlaylistName = 'Muthu-Love Songs';
     currentSongIndex = 0;
     playFirstSong();
   });
 
   document.getElementById('playlist2').addEventListener('click', function() {
     currentPlaylist = playlists.playlist2;
-    currentPlaylistName = 'playlist2';
+    currentPlaylistName = 'Muthu-Kuthu';
     currentSongIndex = 0;
     playFirstSong();
   });
 
   document.getElementById('playlist3').addEventListener('click', function() {
     currentPlaylist = playlists.playlist3;
-    currentPlaylistName = 'playlist3';
+    currentPlaylistName = 'Muthu-Old Meloady';
     currentSongIndex = 0;
     playFirstSong();
   });
 
   document.getElementById('playlist4').addEventListener('click', function() {
     currentPlaylist = playlists.playlist4;
-    currentPlaylistName = 'playlist4';
+    currentPlaylistName = 'Jakan-Play List';
     currentSongIndex = 0;
     playFirstSong();
   });
