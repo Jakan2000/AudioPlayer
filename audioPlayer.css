@@ -1,112 +1,114 @@
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .playlist-container {
-    margin-bottom: 20px;
-    margin-top: 20px; /* Adding top margin */
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .playlist-btn {
-    padding: 8px 12px;
-    cursor: pointer;
-    background-color: #555555;
-    color: rgb(100, 200, 50);
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .retro-radio {
-    background-color: #111111;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 255, 17, 0.2);
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Adding top margin */
-  }
-  
-  .speakers {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin-bottom: 50px;
-  }
-  
-  .speaker {
-    width: 50px;
-    height: 100px;
-    background-color: rgb(85, 255, 0);
-    border-radius: 5px;
-    transform: rotate(90deg);
-  }
-  
-  .left-speaker {
-    margin-right: 70px;
-  }
-  
-  .right-speaker {
-    margin-left: 70px;
-  }
-  
-  .current-song {
-    color: rgb(0, 255, 55);
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .control-btn {
-    padding: 8px 12px;
-    cursor: pointer;
-    background-color: #252525;
-    color: rgb(55, 255, 0)
-    /* border: none; */
-    /* border-radius: 5px; */
-  }
+  font-family: 'Courier New', monospace;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
 
-  #myAudio {
-    width: 100%;
-    margin-top: 20px;
-  }
+.playlists {
+  margin-bottom: 20px;
+}
 
-  #myAudio::-webkit-media-controls-panel {
-    background-color: #222222; 
-    color: white; 
-    border-radius: 10px; 
-  }
-  
+.playlist-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #005403;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
 
-  #myAudio::-webkit-media-controls-play-button,
-  #myAudio::-webkit-media-controls-pause-button,
-  #myAudio::-webkit-media-controls-seek-back-button,
-  #myAudio::-webkit-media-controls-seek-forward-button,
-  #myAudio::-webkit-media-controls-volume-slider {
-    filter: invert(1);
-  }
+.playlist-btn:hover {
+  background-color: #00ff0d;
+}
 
-  #myAudio::-webkit-media-controls-current-time-display,
-  #myAudio::-webkit-media-controls-time-remaining-display,
-  #myAudio::-webkit-media-controls-volume-slider {
-    color: white;
-  }
-  
-  
+.retro-radio {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 255, 17, 0.2);
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.current-song {
+  color: #00ff00;
+  text-align: center !important;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.song-list {
+  margin: 10px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.song-item {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  color: rgb(255, 255, 255)
+}
+
+.song-item:hover {
+  background-color: #9c9a9a;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.control-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px !important;
+}
+
+.control-btn:hover {
+  background-color: #555;
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#audioPlayer::-webkit-media-controls-panel {
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 10px;
+}
+
+#audioPlayer::-webkit-media-controls-play-button,
+#audioPlayer::-webkit-media-controls-pause-button,
+#audioPlayer::-webkit-media-controls-seek-back-button,
+#audioPlayer::-webkit-media-controls-seek-forward-button,
+#audioPlayer::-webkit-media-controls-volume-slider {
+  filter: invert(1);
+}
+
+#audioPlayer::-webkit-media-controls-current-time-display,
+#audioPlayer::-webkit-media-controls-time-remaining-display,
+#audioPlayer::-webkit-media-controls-volume-slider {
+  color: white;
+}
