@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { name: "Without Me", source: "./Audios/Jakan-playList/Without Me.mp3" },
       { name: "Worth It", source: "./Audios/Jakan-playList/Worth It (feat. Kid Ink).mp3" },
       { name: "XO Tour Llif3", source: "./Audios/Jakan-playList/XO Tour Llif3.mp3" },
-      { name: "Yethi Yethi", source: "./Audios/Jakan-playList/Yethi Yethi.mp3" },
+      { name: "Yethi Yethi", source: "./Audios/Jakan-playList/Yethi Yethi.mp3" }
     ]
   };
 
@@ -145,21 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
     playSong(currentSongIndex);
   }
 
-  // Safe event listener setup with null checks
-  const playlistButtons = [
-    { id: 'playlist1', key: 'playlist1', name: 'Muthu-Love Songs' },
-    { id: 'playlist2', key: 'playlist2', name: 'Muthu-Kuthu' },
-    { id: 'playlist3', key: 'playlist3', name: 'Jakan-Play List' },
-    { id: 'playlist4', key: 'playlist4', name: 'Muthu-Old Melody' }
-  ];
-
-  playlistButtons.forEach(btn => {
-    const element = document.getElementById(btn.id);
-    if (element && playlists[btn.key]) {
-      element.addEventListener('click', function () {
-        initializePlaylist(playlists[btn.key], btn.name);
-      });
-    }
+  // Only playlist3 button exists in HTML
+  document.getElementById('playlist3').addEventListener('click', function () {
+    initializePlaylist(playlists.playlist3, 'Jakan-Play List');
   });
 
   playBtn.addEventListener('click', function () {
